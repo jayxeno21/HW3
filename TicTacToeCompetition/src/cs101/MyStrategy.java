@@ -1,7 +1,7 @@
 package cs101;
 
 /**
- * Author:
+ * Author: Jess Woods
  *
  * Honor Pledge: I certify that no unauthorized assistance has been received or
  * given in the completion of this work. I certify that I understand and could
@@ -24,6 +24,7 @@ public class MyStrategy implements Player {
 	public void make_next_move(Board board) {
 
 		// add code here to make one move at a time
+		board.play_random_square(mark);
 
 	}
 

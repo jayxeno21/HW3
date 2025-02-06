@@ -11,7 +11,6 @@ public enum Mark {
 		X.symb = "X";
 		O.symb = "O";
 		BLANK.symb = " ";
-
 	}
 
 }

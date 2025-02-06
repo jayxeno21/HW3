@@ -187,6 +187,13 @@ public class Board {
 
 	}
 
+	public boolean is_board_full() {
+		return (top_left != Mark.BLANK && top_center != Mark.BLANK && top_right != Mark.BLANK
+				&& middle_left != Mark.BLANK && middle_center != Mark.BLANK && middle_right != Mark.BLANK
+				&& bottom_left != Mark.BLANK && bottom_center != Mark.BLANK && bottom_right != Mark.BLANK);
+
+	}
+
 	// win conditions
 	public Mark game_is_over() {
 		// vertical
@@ -210,7 +217,8 @@ public class Board {
 			return top_left;
 		} else if ((top_right == middle_center) && (top_right == bottom_left) && (top_right != Mark.BLANK)) {
 			return top_right;
-		} else { // no one has won yet
+
+		} else { // no one has won yet (or draw)
 			return Mark.BLANK;
 		}
 
