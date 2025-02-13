@@ -33,6 +33,42 @@ public class Board {
 
 	}
 
+	public Mark get_top_left() {
+		return this.top_left;
+	}
+
+	public Mark get_top_center() {
+		return this.top_center;
+	}
+
+	public Mark get_top_right() {
+		return this.top_right;
+	}
+
+	public Mark get_middle_left() {
+		return this.middle_left;
+	}
+
+	public Mark get_middle_center() {
+		return this.middle_center;
+	}
+
+	public Mark get_middle_right() {
+		return this.middle_right;
+	}
+
+	public Mark get_bottom_left() {
+		return this.bottom_left;
+	}
+
+	public Mark get_bottom_center() {
+		return this.bottom_center;
+	}
+
+	public Mark get_bottom_right() {
+		return this.bottom_right;
+	}
+
 	public boolean play_top_left(Mark mark) {
 		if (top_left == Mark.BLANK) {
 			top_left = mark;
@@ -133,7 +169,7 @@ public class Board {
 		}
 	}
 
-	public boolean bottom_center_empty(Mark mark) {
+	public boolean bottom_center_empty() {
 		return (bottom_center == Mark.BLANK);
 	}
 
@@ -146,7 +182,7 @@ public class Board {
 		}
 	}
 
-	public boolean bottom_right_empty(Mark mark) {
+	public boolean bottom_right_empty() {
 		return (bottom_right == Mark.BLANK);
 	}
 
