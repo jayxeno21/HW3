@@ -35,7 +35,7 @@ public class TicTacToe {
 
 			// ONLY UNCOMMENT ONE ENEMY AT A TIME
 			// order_enemy.make_next_move(board);
-			random_enemy.make_next_move(board);
+			// random_enemy.make_next_move(board);
 			// diagonal_enemy.make_next_move(board);
 
 			board.print();
